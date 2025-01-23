@@ -1,0 +1,19 @@
+{
+    "kind": "collectionType",
+    "collectionName": "servicos",
+    "info": {
+      "name": "servico"
+    },
+    "options": {
+      "increments": true,
+      "timestamps": true,
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "tipo_servico": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }

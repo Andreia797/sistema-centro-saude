@@ -1,0 +1,53 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/especialidades",
+        "handler": "especialidade.find",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/especialidades/count",
+        "handler": "especialidade.count",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/especialidades/:id",
+        "handler": "especialidade.findOne",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/especialidades",
+        "handler": "especialidade.create",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/especialidades/:id",
+        "handler": "especialidade.update",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/especialidades/:id",
+        "handler": "especialidade.delete",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  

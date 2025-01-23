@@ -1,0 +1,19 @@
+{
+    "kind": "collectionType",
+    "collectionName": "especialidades",
+    "info": {
+      "name": "especialidade"
+    },
+    "options": {
+      "increments": true,
+      "timestamps": true,
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "tipo": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }

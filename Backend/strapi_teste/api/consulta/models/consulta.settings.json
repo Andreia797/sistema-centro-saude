@@ -1,0 +1,36 @@
+{
+    "kind": "collectionType",
+    "collectionName": "consultas",
+    "info": {
+      "name": "consulta",
+      "description": ""
+    },
+    "options": {
+      "increments": true,
+      "timestamps": true,
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "sintoma": {
+        "type": "string"
+      },
+      "data": {
+        "type": "datetime"
+      },
+      "preco": {
+        "type": "integer"
+      },
+      "medico": {
+        "via": "consultas",
+        "model": "medico"
+      },
+      "paciente": {
+        "via": "consultas",
+        "model": "paciente"
+      },
+      "servico": {
+        "model": "servico"
+      }
+    }
+  }

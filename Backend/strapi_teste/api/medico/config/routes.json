@@ -1,0 +1,52 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/medicos",
+        "handler": "medico.find",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/medicos/count",
+        "handler": "medico.count",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/medicos/:id",
+        "handler": "medico.findOne",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/medicos",
+        "handler": "medico.create",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/medicos/:id",
+        "handler": "medico.update",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/medicos/:id",
+        "handler": "medico.delete",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }

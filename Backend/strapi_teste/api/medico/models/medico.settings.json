@@ -1,0 +1,45 @@
+{
+    "kind": "collectionType",
+    "collectionName": "medicos",
+    "info": {
+      "name": "medico",
+      "description": ""
+    },
+    "options": {
+      "increments": true,
+      "timestamps": true,
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "nome": {
+        "type": "string"
+      },
+      "cod_doc": {
+        "type": "string"
+      },
+      "telemovel": {
+        "type": "string"
+      },
+      "morada": {
+        "type": "string"
+      },
+      "especialidade": {
+        "model": "especialidade"
+      },
+      "data_nasc": {
+        "type": "date",
+        "required": true
+      },
+      "sexo": {
+        "model": "sexo"
+      },
+      "consultas": {
+        "via": "medico",
+        "collection": "consulta"
+      },
+      "doc": {
+        "model": "doc"
+      }
+    }
+  }
